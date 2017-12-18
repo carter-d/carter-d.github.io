@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0 charset="utf-8">
+    <style> body {padding: 0; margin: 0;} </style>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/fa-svg-with-js.css">
+    <script defer src="assets/fontawesome-all.min.js"></script>
+
+  </head>
+  <body>
+    <p></p>
+    <div id="allContent">
+      <div id="canvasHolder">
+        <!-- Our sketch will go here! -->
+      </div>
+
+      <div class = "buttonContainer">
+         <button type="button" id="mergeButton" class="buttons">merge hull!</button> 
+         <button type="button" id="clearButton" class="buttons">clear points</button>
+         <button type="button" id="randomButton" class="buttons">place points randomly</button>
+         <button type="button" id="settingsButton" class="buttons"><i class="fas fa-wrench"></i></button>
+         
+      </div>
+    </div>
+
+    <div id="settings">
+         <div>
+              <p>Animation Speed:</p>
+               <input type="range" autocomplete="off" min="1" max="1500" value="500" class="slider" id="animationSlider">
+               <br>
+               <p>Point Radius:</p>
+               <input type="range" autocomplete="off" min="1" max="16" value="8" class="slider" id="pointRadiusSlider"><br>
+                <p>Line Weight:</p>
+               <input type="range" autocomplete="off" min=".2" max="4" value="1" step=".1" class="slider" id="lineWeightSlider"><br>
+               Number of random points:<br><input type="number" autocomplete="off" value="100" id="randomPointsInput"><br>
+               <button type="button" id="saveButton" class="buttons">save settings</button>
+
+               
+         </div>
+              
+
+    </div>
+
+
+  </body>
+ 
+
+    <script src="assets/p5.min.js"></script>
+    <script src="assets/addons/p5.dom.min.js"></script>
+    <script src="assets/addons/p5.sound.min.js"></script>
+    <script src="js/mergehull.js"></script>
+</html>
